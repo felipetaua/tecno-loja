@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* reset default */
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* criando header */
+
+.logo {
+    width: 120px;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 320px;
+    min-width: 180px;
+    position: relative;
+}
+
+.input-search {
+    width: 60% ;
+    height: 40px;
+    padding: 12px 44px 12px 12px;
+    border-radius: 8px;
+    border: .5px solid #e6e0e0;
+    box-sizing: border-box;
+}
+
+.input-search:focus {
+    outline: none;
+    border: .5px solid #2d9acc;
+}
+
+.search-btn {
+    position: absolute;
+    right: 21%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    color: #2d9acc;
+}
+
+.search-btn:focus {
+    outline: 2px solid rgba(45,154,204,0.25);
+}
+
+.icones {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #e6e0e0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 120px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transition: .8s all;
+}
+
+.nav-items a {
+    color: #212222;
+}
+
+.nav-items a:hover {
+    color: #2d9acc;
+}
+
+
+
+/* pricipal */
+.main {
+    padding: 0 120px;
+}
+
+/* banner */
+
+.section-banner {
+    width: 100%;
+    height: 350px;
+    background-image: url(/src/img/abnner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 80px;
+    border-radius: 16px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-banner h2 {
+    color: #2d9acc;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-banner h1 {
+    width: 60%;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.section-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.section-banner button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+
+    background: linear-gradient(60deg,#2d9acc, #2180ac, #166386);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    opacity: .9;
+}
+
+.section-banner button:hover {
+    opacity: 1;
+}
+
+/* sections cards */
+
+.section-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+    gap: 10px;
+}
+
+.section-cards .card {
+    width: 25%;
+    padding: 15px ;
+    border-radius: 8px;
+    
+    border: 1px solid #e6e0e0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-cards .foto {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card .wrapper-content button {
+    margin-top: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: transparent;
+
+    border: .5px solid #2d9acc;
+    color: #2d9acc;
+
+    transition: .5s all;
+}
+
+.card .wrapper-content button:hover {
+    background-color: #2d9acc;
+    color: #fff;
+
+}
+
+/* section de produtos */
+
+.section-produtos {
+    display: flex;
+    gap: 20px;
+}
+
+.aba-categorias {
+    width: 24%;
+    border: 1px solid #e6e0e0;
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+
+.aba-produtos {
+    width: 75%;
+}
+
+.grid-produtos .card {
+    display: flex;
+}
+
+.imagem-produto {
+    width: 80px;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 16px 40px;
+    }
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 12px 20px;
+    }
+    .logo {
+        width: 90px;
+    }
+    .input-search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 8px;
+    }
+    .icones {
+        order: 2;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .icones a {
+        margin-left: 8px;
+    }
+}
