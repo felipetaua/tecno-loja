@@ -269,7 +269,6 @@ hr {
     border-radius: 8px;
 }
 
-
 .aba-produtos {
     width: 75%;
 }
@@ -324,6 +323,29 @@ hr {
 .imagem-produto {
     width: 80px;
     border-radius: 8px;
+}
+
+.aba-recomended {
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+
+.rating {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #f1c943;
+}
+
+.list-produtos .card {
+    display: flex;
+    margin: 30px 0;
+}
+
+.value2 {
+    margin-left: 10px;
 }
 
 @media (max-width: 900px) {
