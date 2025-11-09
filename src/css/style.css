@@ -525,6 +525,52 @@ hr {
     box-shadow: 0 8px 16px rgba(241, 59, 59, 0.35);
 }
 
+/* section poster */
+
+.section-poster {
+    display: flex;
+    width: 100%;
+    padding: 0 6%;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.content-poster {
+    width: 25%;
+}
+
+.content-poster h2 {
+    padding: 20px 0;
+}
+.poster {
+    width: 75%;
+    height: 650px;
+    border-radius: 12px;
+
+    background-image: url(/src/img/poster.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-poster {
+    width: 100%;
+    border: 1px solid #e6e0e0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.icons {
+    width: 25%;
+}
+
+.card-poster .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
 
 /* banner 2 */
 
