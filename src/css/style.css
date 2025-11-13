@@ -575,6 +575,12 @@ hr {
     padding: 10px 30px;
     border-radius: 8px;
     border: none;
+    transition: .5s all;
+}
+
+.promotions button:hover {
+    background-color: #2d9acc;
+    color: white;   
 }
 
 .promotions h2 {
