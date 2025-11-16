@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/cart.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/png" href="./favicon.png" sizes="32x32" />   
     <title>Tecno Loja</title>
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="/src/img/logo_sem_fundo.png" alt="logo da empresa">
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <img class="logo" src="./src/img/logo_sem_fundo.png" alt="logo da empresa">
             <div class="search-wrapper">
                 <input class="input-search" type="search" id="search-bar" name="search" placeholder="Busque pelo produto dev " />
                 <button type="button" class="search-btn" aria-label="Buscar">
@@ -35,6 +43,31 @@
         </div>
     </header>
     
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="close-mobile-menu" id="close-mobile-menu" aria-label="Fechar menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-items">
+            <li><a href="#"><i class="fa-solid fa-house"></i> Início</a></li>
+            <li><a href="#"><i class="fa-solid fa-headphones"></i> Headphones</a></li>
+            <li><a href="#"><i class="fa-solid fa-keyboard"></i> Teclados</a></li>
+            <li><a href="#"><i class="fa-solid fa-mouse"></i> Mouse</a></li>
+            <li><a href="#"><i class="fa-solid fa-microchip"></i> Processadores</a></li>
+            <li><a href="#"><i class="fa-solid fa-memory"></i> Placas de vídeo</a></li>
+            <li><a href="#"><i class="fa-solid fa-desktop"></i> Monitores</a></li>
+            <li><a href="#"><i class="fa-solid fa-laptop"></i> Notebooks</a></li>
+            <li><a href="#"><i class="fa-solid fa-tablet"></i> Tablets</a></li>
+            <li><a href="#"><i class="fa-solid fa-mobile"></i> Smartphones</a></li>
+        </ul>
+    </nav>
+    
     <!-- Cart Sidebar -->
     <div id="cart-sidebar" class="cart-sidebar">
         <div class="cart-header">
@@ -44,7 +77,6 @@
             </button>
         </div>
         <div class="cart-items" id="cart-items">
-            <!-- Items serão inseridos dinamicamente -->
             <div class="empty-cart">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <p>Seu carrinho está vazio</p>
@@ -678,4 +710,5 @@
     <script src="/src/JS/script.js"></script>
     <script src="/src/JS/theme.js"></script>
     <script src="/src/JS/cart.js"></script>
+    <script src="/src/JS/menu.js"></script>
 </html>
