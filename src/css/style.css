@@ -14,6 +14,9 @@
     --muted: #505050;
     --accent: #2d9acc;
     --card-color: #e6e0e0;
+    --transparent: rgba(255, 255, 255, 0.884);
+    --shadow: rgba(226, 226, 226, 0.486);
+    --border: #b3b3b3;
 }
 
 body.dark-theme{
@@ -23,6 +26,9 @@ body.dark-theme{
     --muted: #ffffff;
     --accent: #4fd1e0;
     --card-color: #505050;
+    --transparent: rgba(26, 24, 24, 0.884);
+    --shadow: rgb(37, 37, 37);
+    --border: #505050;
     background-color: var(--bg);
     color: var(--text);
 }
@@ -141,9 +147,38 @@ ul {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
     padding: 20px 6%;
     gap: 12px;
     flex-wrap: wrap;
+
+    transition: padding 0.3s ease, height 0.3s ease;
+}
+
+.header.header-scrolled {
+    padding: 0 6%;
+    background: var(--transparent);
+
+    box-shadow: 0 8px 32px 0 var(--shadow);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.header-scrolled .logo {
+    max-height: 40px; 
+    transition: max-height 0.3s ease;
+}
+
+.header-scrolled .logo {
+    max-height: 40px;
+    transition: max-height 0.3s ease;
 }
 
 .search-wrapper {
@@ -162,7 +197,7 @@ ul {
     height: 40px;
     padding: 12px 44px 12px 12px;
     border-radius: 8px;
-    border: .5px solid #e6e0e0;
+    border: .5px solid var(--border);
     box-sizing: border-box;
 }
 
@@ -200,7 +235,7 @@ ul {
 }
 
 hr {
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
 }
 
 .nav-items {
@@ -227,7 +262,6 @@ hr {
 .nav-items a:hover {
     color: #2d9acc;
 }
-
 
 
 /* pricipal */
@@ -306,7 +340,7 @@ hr {
     padding: 15px ;
     border-radius: 8px;
     
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -365,7 +399,7 @@ hr {
 .aba-categorias {
     width: 100%;
     height: 600px;
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 20px 40px;
 }
@@ -409,10 +443,18 @@ hr {
     height: 140px;
     display: flex;
     align-items: center;
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 10px 20px;
+
+    transition: 1s all;
 }
+
+.grid-produtos .card:hover {
+    border: 1px solid #e6e0e0;
+}
+
+
 
 .wrapper-content {
     margin-left: 20px;
@@ -488,7 +530,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 20px 40px;
     margin: 25px 0;
@@ -553,7 +595,7 @@ hr {
 .progressBar {
     width: 100%;
     height: 5px;
-    background-color: #e6e0e0;
+    background-color: var(--border);
     border-radius: 8px;
 }
 
@@ -613,7 +655,7 @@ hr {
 
 .grid-products .card {
     padding: 15px;
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
     border-radius: 8px;
     position: relative;
     overflow: hidden;
@@ -732,7 +774,7 @@ hr {
 
 .card-poster {
     width: 100%;
-    border: 1px solid #e6e0e0;
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 20px 10px;
 }
@@ -798,8 +840,6 @@ hr {
     cursor: pointer;
     box-shadow: 0 6px 18px rgba(0,0,0,0.2);
     opacity: .9;
-
-   
 }
 
 .section-banner2 button:hover {

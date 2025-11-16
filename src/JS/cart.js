@@ -1,4 +1,3 @@
-// Cart functionality
 (function(){
     const cartBtn = document.getElementById('cart-btn');
     const cartSidebar = document.getElementById('cart-sidebar');
@@ -9,34 +8,27 @@
     const cartCount = document.querySelector('.cart-count');
     const totalPriceEl = document.querySelector('.total-price');
 
-    // Cart data (em produção, usar localStorage ou API)
     let cart = [];
 
-    // Open cart
     function openCart() {
         cartSidebar.classList.add('active');
         cartOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
-    // Close cart
     function closeCartSidebar() {
         cartSidebar.classList.remove('active');
         cartOverlay.classList.remove('active');
         document.body.style.overflow = '';
     }
 
-    // Update cart display
     function updateCart() {
-        // Update count
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         cartCount.textContent = totalItems;
 
-        // Update total price
         const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
         totalPriceEl.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
 
-        // Render items
         if (cart.length === 0) {
             cartItemsContainer.innerHTML = `
                 <div class="empty-cart">
@@ -70,7 +62,6 @@
         }
     }
 
-    // Add item to cart
     function addToCart(product) {
         const existingItem = cart.find(item => item.id === product.id);
         
@@ -87,7 +78,6 @@
         openCart();
     }
 
-    // Increase quantity
     function increaseQuantity(id) {
         const item = cart.find(item => item.id === id);
         if (item) {
@@ -96,7 +86,6 @@
         }
     }
 
-    // Decrease quantity
     function decreaseQuantity(id) {
         const item = cart.find(item => item.id === id);
         if (item && item.quantity > 1) {
