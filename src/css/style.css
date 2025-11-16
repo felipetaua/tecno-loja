@@ -7,14 +7,13 @@
     font-family: "Inter", sans-serif;
 }
 
-
-
 :root{
     --bg: #ffffff;
     --surface: #ffffff;
-    --text: #212222;
+    --text: #000;
     --muted: #505050;
     --accent: #2d9acc;
+    --card-color: #e6e0e0;
 }
 
 body.dark-theme{
@@ -23,6 +22,7 @@ body.dark-theme{
     --text: #e6eef6;
     --muted: #ffffff;
     --accent: #4fd1e0;
+    --card-color: #505050;
     background-color: var(--bg);
     color: var(--text);
 }
@@ -216,12 +216,12 @@ hr {
 }
 
 .nav-items a {
-    color: #212222;
+    color: var(--text);
 }
 
 .icones a svg {
     fill: var(--text)!important;
-    transition: .5s all;
+    transition: 1s all;
 }
 
 .nav-items a:hover {
@@ -382,7 +382,7 @@ hr {
 
 .categoria-list li a {
     display: block;
-    color: #212222;
+    color: var(--text);
     padding: 15px 0;
 
     transition: 2s all;
@@ -390,7 +390,7 @@ hr {
 
 .categoria-list li a:hover {
     color: #2d9acc;
-    background: linear-gradient(90deg,#21222200, #21222234, #2122225d);
+    background: linear-gradient(90deg,var(--text)00, var(--text)34, var(--text)5d);
     border-radius: 8px;
 }
 
@@ -419,7 +419,7 @@ hr {
 }
 
 .wrapper-content h3 {
-    color: #212222;
+    color: var(--text);
     font-weight: bold;
 }
 
@@ -508,7 +508,7 @@ hr {
 }
 
 .card-content h3 {
-    color: #212222;
+    color: var(--text);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 32px;
@@ -546,7 +546,7 @@ hr {
 
 .bar-content .vendas {
     font-size: 18px;
-    color: #212222;
+    color: var(--text);
     margin-bottom: 8px;
 }
 
@@ -570,7 +570,7 @@ hr {
 }
 
 .cronometer h4 {
-    color: #212222;
+    color: var(--text);
     font-weight: bold;
     margin: 10px 0;
 }
@@ -581,13 +581,13 @@ hr {
     flex-direction: column;
     align-items: center;
 
-    color: #212222;
+    color: var(--text);
     border-radius: 8px;
     font-weight: bold;
 
     width: 80px;
     height: 60px;
-    background-color: #e6e0e0;
+    background-color: var(--card-color);
 }
 
 /* sessão produtos 2 */
@@ -620,7 +620,7 @@ hr {
 }
 
 .grid-products .card h3 {
-    color: #161617;
+    color: var(--text);
 }
 
 .grid-products .card > p {
@@ -712,7 +712,7 @@ hr {
 
 .promotions h2 {
     margin: 10px 0;
-    color: #212222;
+    color: var(--text);
 }
 
 .promotions p {
