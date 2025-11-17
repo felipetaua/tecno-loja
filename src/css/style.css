@@ -762,6 +762,7 @@ hr {
     color: var(--text);
     font-weight: bold;
     margin: 10px 0;
+    transition: color 0.3s ease;
 }
 
 .cronometer-content {
@@ -777,6 +778,49 @@ hr {
     width: 80px;
     height: 60px;
     background-color: var(--card-color);
+    transition: all 0.3s ease;
+}
+
+.cronometer-content p:first-child {
+    font-size: 1.5rem;
+}
+
+.cronometer-content p:last-child {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.cronometer.urgent .cronometer-content {
+    background: linear-gradient(135deg, #ff4444, #cc0000);
+    color: #fff;
+    animation: pulse-urgent 1s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+}
+
+.cronometer.urgent h4 {
+    color: #ff4444;
+    animation: text-pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse-urgent {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(255, 68, 68, 0.8);
+    }
+}
+
+@keyframes text-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
 }
 
 /* sessão produtos 2 */
