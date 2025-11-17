@@ -71,8 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const productCards = document.querySelectorAll('.grid-produtos .card, .grid-products .card, .list-produtos .card');
 
-    console.log("teste"+ productCards);
-
     productCards.forEach(card => {
         const titleElement = card.querySelector('h3');
         if (titleElement) {
