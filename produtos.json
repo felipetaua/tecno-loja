@@ -192,7 +192,7 @@
       "desconto": 17,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/STICKERS-1.webp",
+      "imagem": "./src/img/produtos/STICKERS-1.webp",
       "estoque": 200,
       "tags": ["acessórios", "stickers", "decoração"]
     },
@@ -206,7 +206,7 @@
       "desconto": 17,
       "emPromocao": false,
       "rating": 5.0,
-      "imagem": "/src/img/produtos/STICKERS-2.webp",
+      "imagem": "./src/img/produtos/STICKERS-2.webp",
       "estoque": 180,
       "tags": ["acessórios", "stickers", "decoração"]
     },
@@ -220,7 +220,7 @@
       "desconto": 19,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/STICKERS-3.webp",
+      "imagem": "./src/img/produtos/STICKERS-3.webp",
       "estoque": 150,
       "tags": ["acessórios", "stickers", "decoração"]
     },
@@ -234,7 +234,7 @@
       "desconto": 8,
       "emPromocao": true,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/TECLADO-3.webp",
+      "imagem": "./src/img/produtos/TECLADO-3.webp",
       "estoque": 8,
       "tags": ["periféricos", "teclados", "mecânico", "gaming", "destaque"]
     },
@@ -380,7 +380,7 @@
       "desconto": 25,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MANGUITO-1.jpg",
+      "imagem": "./src/img/produtos/MANGUITO-1.jpg",
       "estoque": 30,
       "tags": ["acessórios", "ergonomia", "saúde"]
     },
@@ -394,7 +394,7 @@
       "desconto": 19,
       "emPromocao": false,
       "rating": 5.0,
-      "imagem": "/src/img/produtos/KIT-6.webp",
+      "imagem": "./src/img/produtos/KIT-6.webp",
       "estoque": 22,
       "tags": ["kits", "café", "presente"]
     },
@@ -408,7 +408,7 @@
       "desconto": 23,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/KIT-5.png",
+      "imagem": "./src/img/produtos/KIT-5.png",
       "estoque": 18,
       "tags": ["kits", "bonés", "livros", "presente"]
     },
@@ -422,7 +422,7 @@
       "desconto": 8,
       "emPromocao": false,
       "rating": 5.0,
-      "imagem": "/src/img/produtos/KIT-4.webp",
+      "imagem": "./src/img/produtos/KIT-4.webp",
       "estoque": 15,
       "tags": ["kits", "moletons", "roupas"]
     },
@@ -436,7 +436,7 @@
       "desconto": 24,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/KIT-3.webp",
+      "imagem": "./src/img/produtos/KIT-3.webp",
       "estoque": 28,
       "tags": ["kits", "canecas", "presente"]
     },
@@ -450,7 +450,7 @@
       "desconto": 23,
       "emPromocao": false,
       "rating": 5.0,
-      "imagem": "/src/img/produtos/KIT-2.webp",
+      "imagem": "./src/img/produtos/KIT-2.webp",
       "estoque": 12,
       "tags": ["kits", "java", "presente"]
     },
@@ -464,7 +464,7 @@
       "desconto": 16,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/KIT-1.webp",
+      "imagem": "./src/img/produtos/KIT-1.webp",
       "estoque": 10,
       "tags": ["kits", "camisetas", "roupas"]
     },
@@ -478,7 +478,7 @@
       "desconto": 15,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/GARRAFA-1.jpeg",
+      "imagem": "./src/img/produtos/GARRAFA-1.jpeg",
       "estoque": 40,
       "tags": ["acessórios", "garrafas", "hidratação"]
     },
@@ -492,7 +492,7 @@
       "desconto": 15,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/GARRAFA-2.jpeg",
+      "imagem": "./src/img/produtos/GARRAFA-2.jpeg",
       "estoque": 38,
       "tags": ["acessórios", "garrafas", "hidratação"]
     },
@@ -506,7 +506,7 @@
       "desconto": 15,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/GARRAFA-3.jpeg",
+      "imagem": "./src/img/produtos/GARRAFA-3.jpeg",
       "estoque": 42,
       "tags": ["acessórios", "garrafas", "hidratação"]
     },
@@ -520,7 +520,7 @@
       "desconto": 15,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/GARRAFA-4.jpeg",
+      "imagem": "./src/img/produtos/GARRAFA-4.jpeg",
       "estoque": 35,
       "tags": ["acessórios", "garrafas", "hidratação"]
     },
@@ -534,7 +534,7 @@
       "desconto": 9,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOLETOM-1.png",
+      "imagem": "./src/img/produtos/MOLETOM-1.png",
       "estoque": 20,
       "tags": ["roupas", "moletons", "inverno"]
     },
@@ -548,7 +548,7 @@
       "desconto": 9,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOLETOM-2.png",
+      "imagem": "./src/img/produtos/MOLETOM-2.png",
       "estoque": 18,
       "tags": ["roupas", "moletons", "inverno"]
     },
@@ -562,7 +562,7 @@
       "desconto": 9,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOLETOM-3.png",
+      "imagem": "../src/img/produtos/MOLETOM-3.png",
       "estoque": 22,
       "tags": ["roupas", "moletons", "inverno"]
     },
@@ -576,7 +576,7 @@
       "desconto": 3,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOCHILA-4.jpeg",
+      "imagem": "./src/img/produtos/MOCHILA-4.jpeg",
       "estoque": 15,
       "tags": ["acessórios", "mochilas", "dev"]
     },
@@ -590,7 +590,7 @@
       "desconto": 9,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOCHILA-3.jpeg",
+      "imagem": "./src/img/produtos/MOCHILA-3.jpeg",
       "estoque": 12,
       "tags": ["acessórios", "mochilas", "SO"]
     },
@@ -604,7 +604,7 @@
       "desconto": 10,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOCHILA-2.jpeg",
+      "imagem": "./src/img/produtos/MOCHILA-2.jpeg",
       "estoque": 18,
       "tags": ["acessórios", "mochilas", "estratégia"]
     },
@@ -618,7 +618,7 @@
       "desconto": 9,
       "emPromocao": false,
       "rating": 4.5,
-      "imagem": "/src/img/produtos/MOCHILA-1.jpeg",
+      "imagem": "./src/img/produtos/MOCHILA-1.jpeg",
       "estoque": 14,
       "tags": ["acessórios", "mochilas", "bugs"]
     }
