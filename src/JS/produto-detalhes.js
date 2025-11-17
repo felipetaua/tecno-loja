@@ -65,13 +65,13 @@ function renderProduct(product) {
 
     const stockElement = document.getElementById('product-stock');
     if (product.estoque > 20) {
-        stockElement.textContent = '✓ Em estoque';
+        stockElement.textContent = 'Em estoque';
         stockElement.classList.add('in-stock');
     } else if (product.estoque > 0) {
-        stockElement.textContent = `⚠ Apenas ${product.estoque} em estoque`;
+        stockElement.textContent = `Apenas ${product.estoque} em estoque`;
         stockElement.classList.add('low-stock');
     } else {
-        stockElement.textContent = '✗ Fora de estoque';
+        stockElement.textContent = 'Fora de estoque';
         stockElement.classList.add('out-stock');
     }
 
@@ -97,10 +97,8 @@ function renderProduct(product) {
     starsDiv.innerHTML = starsHTML;
     ratingContainer.querySelector('.rating-value').textContent = `${product.rating} / 5.0`;
 
-    // Descrição
     document.getElementById('product-description').textContent = product.descricao;
 
-    // Tags
     const tagsContainer = document.getElementById('product-tags');
     if (product.tags && product.tags.length > 0) {
         tagsContainer.innerHTML = product.tags.map(tag => 
@@ -150,7 +148,7 @@ function renderProduct(product) {
             // Feedback visual
             btnAddCart.innerHTML = '<i class="fa-solid fa-check"></i> Adicionado!';
             setTimeout(() => {
-                btnAddCart.innerHTML = '<i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho';
+                btnAddCart.innerHTML = 'Adicionar ao Carrinho';
             }, 2000);
         };
     }
@@ -177,7 +175,6 @@ function loadRelatedProducts(allProducts, category, currentProductId) {
                     <span class="value">R$ ${product.preco.toFixed(2).replace('.', ',')}</span>
                     ${product.precoAntigo > product.preco ? 
                         `<span class="old">R$ ${product.precoAntigo.toFixed(2).replace('.', ',')}</span>` 
-                        : ''}
                         : ''}
                 </div>
             </div>
