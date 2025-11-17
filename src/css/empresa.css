@@ -1,0 +1,72 @@
+.imagen-empresa{
+    border-radius: 32px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+
+}
+
+.wrapper-imagen-empresa{
+    display: flex;
+    justify-content: center;
+}
+
+.section-empresa{
+    margin: 40px 0px;
+    
+}
+
+.section-empresa h2{
+    font-size: 48px;
+}
+
+.section-empresa p{
+    font-size: 24px;
+}
+
+.section-missao{
+    margin: 40px 0px;
+}
+
+.section-missao h2{
+    font-size: 48px;
+}
+
+.section-missao p{
+    font-size: 24px;
+}
+
+.section-visao{
+    margin: 40px 0px; 
+}
+
+.section-visao h2{
+    font-size: 48px; 
+}
+
+.section-visao p{
+    font-size: 24px;
+}
+
+.section-valores{
+    margin: 40px 0px;
+}
+
+.section-valores h2{
+    font-size: 48px;
+}
+
+.section-valores ul{
+    font-size: 24px;
+}
+
+.banner-empresa{
+    border-radius: 50% 50% 32px 32px;
+    background-image: url(../img/empresa/banner-empresa.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+
