@@ -268,7 +268,7 @@
 .current-price {
     font-size: 36px;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--primary);
 }
 
 .old-price {
@@ -349,7 +349,7 @@
 .btn-add-cart {
     flex: 1;
     padding: 16px 32px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--primary);
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -366,13 +366,14 @@
 
 .btn-add-cart:hover {
     transform: translateY(-2px);
+    background: linear-gradient(135deg, #4e7696 0%, #4d7394 100%);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .btn-add-cart:active {
     transform: translateY(0);
+    
 }
-
 .btn-favorite {
     width: 56px;
     height: 56px;
@@ -503,7 +504,7 @@
 .related-product-price .value {
     font-size: 18px;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--primary);
 }
 
 .related-product-price .old {
